@@ -13,7 +13,7 @@ function Story() {
           ></div>
         </div>
         <div
-          className="flex-1 p-6 rounded-xl py-18"
+          className="flex-1 p-8 rounded-xl py-15"
           style={{
             backgroundImage:
               "linear-gradient(135deg, rgba(0, 201, 255, 0), rgba(0, 201, 255, 0.2) 150%)",
