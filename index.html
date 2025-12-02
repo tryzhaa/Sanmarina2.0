@@ -24,6 +24,17 @@
       <input type="text" name="subject" />
       <textarea name="message"></textarea>
     </form>
+    <form name="inquiry" netlify hidden>
+      <input type="hidden" name="form-name" value="inquiry" />
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <select name="userType">
+        <option>Student</option>
+        <option>Parent</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

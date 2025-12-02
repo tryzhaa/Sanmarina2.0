@@ -114,7 +114,7 @@ function InquiryForm() {
           <select
             className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
             id="user-type"
-            name="user-type"
+            name="userType"
           >
             <option>Student</option>
             <option>Parent</option>
