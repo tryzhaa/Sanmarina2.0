@@ -56,6 +56,7 @@ function InquiryForm() {
         data-netlify="true"
         className="space-y-4"
       >
+        <input type="hidden" name="form-name" value="inquiry" />
         <div>
           <label
             className="text-sm font-medium text-text-muted-light dark:text-text-muted-dark"
@@ -83,6 +84,7 @@ function InquiryForm() {
               className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
               id="phone"
               type="tel"
+              name="phone"
             />
           </div>
 
@@ -97,6 +99,7 @@ function InquiryForm() {
               className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
               id="email"
               type="email"
+              name="email"
             />
           </div>
         </div>
@@ -111,6 +114,7 @@ function InquiryForm() {
           <select
             className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
             id="user-type"
+            name="user-type"
           >
             <option>Student</option>
             <option>Parent</option>
@@ -128,6 +132,7 @@ function InquiryForm() {
             className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
             id="message"
             rows={4}
+            name="message"
           ></textarea>
         </div>
 

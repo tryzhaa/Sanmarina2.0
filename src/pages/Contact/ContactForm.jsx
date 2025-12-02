@@ -1,9 +1,5 @@
 function ContactForm() {
-  function handleSubmit(e) {
-    e.preventDefault();
-    // TODO: wire up form submission (API, email, or integration)
-    alert("Message submitted (form handler not implemented)");
-  }
+
 
   return (
     <div
@@ -22,6 +18,7 @@ function ContactForm() {
         data-netlify="true"
         className="grid grid-cols-1 gap-4"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <label
             className="text-sm font-medium text-gray-700 dark:text-gray-300"
