@@ -1,3 +1,5 @@
+import { NavLink, Link } from "react-router";
+
 function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200/50 bg-white/80 backdrop-blur-sm dark:border-gray-800/50 dark:bg-background-dark/80">
@@ -25,35 +27,51 @@ function Navbar() {
             </svg>
           </div>
           <h2 className="font-display text-xl font-bold text-primary dark:text-white">
-            Sanmarina
+            <Link to={"/"}>Sanmarina</Link>
           </h2>
         </div>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <a
-            className="font-display text-sm font-medium text-text-light hover:text-primary dark:text-text-dark dark:hover:text-secondary"
-            href="#"
+          <NavLink
+            to={"/"}
+            className={({ isActive }) =>
+              `font-display text-sm font-medium  hover:text-primary dark:text-text-dark dark:hover:text-secondary ${
+                isActive ? "text-primary" : "text-text-light"
+              }`
+            }
           >
             Home
-          </a>
-          <a
-            className="font-display text-sm font-medium text-text-light hover:text-primary dark:text-text-dark dark:hover:text-secondary"
-            href="#"
+          </NavLink>
+          <NavLink
+            to={"/about"}
+            className={({ isActive }) =>
+              `font-display text-sm font-medium  hover:text-primary dark:text-text-dark dark:hover:text-secondary ${
+                isActive ? "text-primary" : "text-text-light"
+              }`
+            }
           >
             About
-          </a>
-          <a
-            className="font-display text-sm font-medium text-primary dark:text-secondary"
-            href="#"
+          </NavLink>
+          <NavLink
+            to={"/services"}
+            className={({ isActive }) =>
+              `font-display text-sm font-medium  hover:text-primary dark:text-text-dark dark:hover:text-secondary ${
+                isActive ? "text-primary" : "text-text-light"
+              }`
+            }
           >
             Services
-          </a>
-          <a
-            className="font-display text-sm font-medium text-text-light hover:text-primary dark:text-text-dark dark:hover:text-secondary"
-            href="#"
+          </NavLink>
+          <NavLink
+            to={"/contact"}
+            className={({ isActive }) =>
+              `font-display text-sm font-medium  hover:text-primary dark:text-text-dark dark:hover:text-secondary ${
+                isActive ? "text-primary" : "text-text-light"
+              }`
+            }
           >
             Contact
-          </a>
+          </NavLink>
         </nav>
 
         <button
