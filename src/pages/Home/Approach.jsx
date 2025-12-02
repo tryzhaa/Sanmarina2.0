@@ -55,7 +55,6 @@ function InquiryForm() {
         method="POST"
         data-netlify="true"
         className="space-y-4"
-        onSubmit={(e) => e.preventDefault()}
       >
         <div>
           <label

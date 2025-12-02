@@ -21,7 +21,6 @@ function ContactForm() {
         method="POST"
         data-netlify="true"
         className="grid grid-cols-1 gap-4"
-        onSubmit={handleSubmit}
       >
         <div>
           <label
