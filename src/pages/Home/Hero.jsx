@@ -20,12 +20,16 @@ function Hero() {
       </div>
 
       <div className="flex-wrap gap-3 flex">
-        <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105">
-          Book Free Counseling
-        </button>
-        <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-background-light dark:bg-background-dark/80 text-text-light dark:text-text-dark text-base font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105">
-          Ask About Courses
-        </button>
+        <Link to={"/contact"}>
+          <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105">
+            Book Free Counseling
+          </button>
+        </Link>
+        <Link to={"/contact"}>
+          <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-background-light dark:bg-background-dark/80 text-text-light dark:text-text-dark text-base font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105">
+            Ask About Courses
+          </button>
+        </Link>
       </div>
     </section>
   );

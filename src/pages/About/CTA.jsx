@@ -15,9 +15,11 @@ function CTA() {
           Let us help you navigate the path to your dream university. Our expert
           counselors are here to guide you every step of the way.
         </p>
-        <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-white text-base font-bold tracking-[0.015em] transition-transform hover:scale-105  mx-auto">
-          Get Free Counselling
-        </button>
+        <Link to={"/contact"}>
+          <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-white text-base font-bold tracking-[0.015em] transition-transform hover:scale-105  mx-auto">
+            Get Free Counselling
+          </button>
+        </Link>
       </div>
     </section>
   );
