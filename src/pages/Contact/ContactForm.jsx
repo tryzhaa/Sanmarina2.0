@@ -16,7 +16,13 @@ function ContactForm() {
       <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
         Send us a Message
       </h3>
-      <form className="grid grid-cols-1 gap-4" onSubmit={handleSubmit}>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        className="grid grid-cols-1 gap-4"
+        onSubmit={handleSubmit}
+      >
         <div>
           <label
             className="text-sm font-medium text-gray-700 dark:text-gray-300"

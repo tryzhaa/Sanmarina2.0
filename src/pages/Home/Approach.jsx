@@ -50,7 +50,13 @@ function InquiryForm() {
       <h3 className="text-2xl font-bold font-heading mb-6 text-text-light dark:text-text-dark">
         Quick Inquiry
       </h3>
-      <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+      <form
+        name="inquiry"
+        method="POST"
+        data-netlify="true"
+        className="space-y-4"
+        onSubmit={(e) => e.preventDefault()}
+      >
         <div>
           <label
             className="text-sm font-medium text-text-muted-light dark:text-text-muted-dark"
