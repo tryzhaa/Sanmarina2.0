@@ -16,7 +16,7 @@ function Story() {
           className="flex-1 p-8 rounded-xl py-15"
           style={{
             backgroundImage:
-              "linear-gradient(135deg, rgba(0, 201, 255, 0), rgba(0, 201, 255, 0.2) 150%)",
+              "linear-gradient(135deg, rgba(0, 201, 255, 0), rgba(0, 201, 255, 0.1) 150%)",
           }}
         >
           <h2 className="text-accent dark:text-accent text-sm font-bold font-heading uppercase tracking-wider mb-2">

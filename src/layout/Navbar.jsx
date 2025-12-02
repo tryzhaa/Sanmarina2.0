@@ -80,7 +80,7 @@ function Navbar() {
         </nav>
 
         <button
-          className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide transition-transform hover:scale-105 font-display hover:bg-accent"
+          className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide transition-transform hover:scale-105 font-display hover:bg-primary/90"
           aria-label="book-consultation"
         >
           <span className="truncate">Book a Consultation</span>
