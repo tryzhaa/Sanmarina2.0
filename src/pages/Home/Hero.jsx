@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 function Hero() {
   const bg =
-    "linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJKdY1VOKQvY7P6vZ0s2u7iU1U_Ua-ZRBjmi7RhFLvATZeaXbdtevUhB_JKDe1Kk_zb_Oq8eJK42Pl1kKJ1-hsASrLBcll14tILfElUOkI-Ap10YndGrTT7qRG9XWntQHUdfznY_Nd3f41BAc2peHryFdYGLMwjx-JeK2s1mc706m70z3ZQ8ybDHdYoROx1Kj_r6muNLfV7U6SaDB0-LAuvijnWFHxiI337Yre_L2jPYtsOW34PMXXtKAUgRy59U1Vc8zCAAcZwPF8')";
+    "linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%), url('/student.jpg')";
 
   return (
     <section
