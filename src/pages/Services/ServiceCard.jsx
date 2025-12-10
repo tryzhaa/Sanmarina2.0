@@ -1,7 +1,9 @@
+import { Link } from "react-router";
+
 function ServiceCard({ title, desc, img, cta }) {
   return (
     <div
-      className="flex flex-col rounded-xl bg-white shadow-lg transition-shadow hover:shadow-2xl dark:bg-slate-800"
+      className="w-full max-w-sm flex flex-col rounded-xl bg-white shadow-lg transition-shadow hover:shadow-2xl dark:bg-slate-800"
       style={{
         backgroundImage:
           "linear-gradient(180deg, rgba(0, 201, 255, 0), rgba(0, 201, 255, 0.08) 120%)",
@@ -21,9 +23,11 @@ function ServiceCard({ title, desc, img, cta }) {
         <ul className="mt-4 flex-1 space-y-2">
           {/* Placeholder: the original HTML had three list items per card. Keep flexible. */}
         </ul>
-        <button className="mt-6 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-colors hover:bg-primary/90 hover:text-white dark:bg-secondary/20 dark:text-secondary dark:hover:bg-secondary dark:hover:text-primary font-display">
-          {cta}
-        </button>
+        <Link to="/contact">
+          <button className="mt-6 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-colors hover:bg-primary/90 hover:text-white dark:bg-secondary/20 dark:text-secondary dark:hover:bg-secondary dark:hover:text-primary font-display">
+            {cta}
+          </button>
+        </Link>
       </div>
     </div>
   );
@@ -49,6 +53,12 @@ function ServicesSection() {
       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBA_X-yk-2wuK6u8cgPSYGi-zSZiLfUs0txHUuQEJK7ACTrKV5ryIILCndDllGvtQEBPnTcknnTOurMPvqhX7m1bmTOinFo9Uuaq3HWqtmWnZcyrByZja3coCxpiwHOkFm6rYlY1TVkhdEnM8XWXdlBwb-7q3OC8gJHTOKfbjD99ogc63CcjvhE9_PMLAlRPCrQYlQrD1v6PZRAo1fHVkzSDIuZl6W81lkB48TpNNAn-C_nsprt8IYhJUL2H9QoTwXPJZYA6GQ-uWzV",
       cta: "Discover Your Path",
     },
+    {
+      title: "Placement Assistance",
+      desc: "We support students in securing the right job opportunities in India and abroad, including guidance on applications, interviews, and complete visa processing support.",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf5-fCyU4eoaBvU_Cq-MeP1CaosuquHlCdUw&s",
+      cta: "Shape Your Future",
+    },
   ];
 
   return (
@@ -59,7 +69,7 @@ function ServicesSection() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div className="flex flex-wrap gap-8 justify-center">
         {services.map((s) => (
           <ServiceCard key={s.title} {...s} />
         ))}

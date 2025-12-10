@@ -1,7 +1,18 @@
 import { NavLink, Link } from "react-router";
-import { FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import {
+  FaYoutube,
+  FaInstagram,
+  FaLinkedin,
+  FaFacebook,
+} from "react-icons/fa6";
 
 function Footer() {
+  const socialLinks = {
+    facebook: "https://www.facebook.com/sanmarinaoverseas",
+    linkedin: "https://www.linkedin.com/company/sanmarinaoverseas/",
+    youtube: "https://www.youtube.com/@SanmarinaOverseas",
+    instagram: "https://www.instagram.com/sanmarinaoverseas/",
+  };
   return (
     <footer className="bg-primary text-white mt-2">
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -41,7 +52,7 @@ function Footer() {
 
           <div>
             <h3 className="font-bold font-heading mb-4">Contact Us</h3>
-            <ul className="space-y-2 text-sm text-white/70">
+            <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-lg">mail</span>
                 info@sanmarinaoverseas.com
@@ -50,11 +61,12 @@ function Footer() {
                 <span className="material-symbols-outlined text-lg">call</span>
                 +91 8590252808
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex  gap-2">
                 <span className="material-symbols-outlined text-lg">
                   location_on
                 </span>
-                Mangalakatt Building, Chevayur PO, Calicut – 673017
+                Mangalakatt Building, CWRDM Bypass Road, Iringadanpalli,
+                Chevayoor P.O., Calicut - 673017
               </li>
             </ul>
           </div>
@@ -64,22 +76,33 @@ function Footer() {
             <div className="flex gap-4">
               <a
                 className="text-white/70 hover:text-accent"
-                href="#"
+                href={socialLinks.facebook}
+                aria-label="facebook"
+                target="_blank"
+              >
+                <FaFacebook size={24} />
+              </a>
+              <a
+                className="text-white/70 hover:text-accent"
+                href={socialLinks.linkedin}
                 aria-label="linkedin"
+                target="_blank"
               >
                 <FaLinkedin size={24} />
               </a>
               <a
                 className="text-white/70 hover:text-accent"
-                href="#"
+                href={socialLinks.youtube}
                 aria-label="youtube"
+                target="_blank"
               >
                 <FaYoutube size={24} />
               </a>
               <a
                 className="text-white/70 hover:text-accent"
-                href="#"
+                href={socialLinks.instagram}
                 aria-label="instagram"
+                target="_blank"
               >
                 <FaInstagram size={24} />
               </a>

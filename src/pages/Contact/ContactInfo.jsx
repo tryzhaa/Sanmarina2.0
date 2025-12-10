@@ -18,7 +18,8 @@ function ContactInfo() {
             Office Address
           </p>
           <p className="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">
-            Mangalakatt Building, Chevayur PO, Calicut – 673017
+            Mangalakatt Building, CWRDM Bypass Road, <br /> Iringadanpalli,
+            Chevayoor P.O., Calicut - 673017
           </p>
         </div>
       </div>
