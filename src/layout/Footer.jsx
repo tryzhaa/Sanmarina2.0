@@ -10,7 +10,7 @@ import { SOCIAL_LINKS } from "../utils/constants";
 function Footer() {
   return (
     <footer className="bg-primary text-white mt-2">
-      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pt-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-start gap-4">
@@ -106,7 +106,11 @@ function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-6 text-center text-sm text-white/70">
-          © 2025 Sanmarina Educational Consultancy. All Rights Reserved.
+          © 2025 Sanmarina Educational Consultancy. All Rights Reserved. |
+          Designed for global ambitions by{" "}
+          <Link to="https://pixelogiclabs.com/" className="text-accent">
+            Pixelogic Labs{" "}
+          </Link>
         </div>
       </div>
     </footer>
